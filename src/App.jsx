@@ -1,12 +1,12 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import axios from "axios";
+import { useState, useEffect } from "react";
 import Home from "./pages/Home";
 import Favorites from "./pages/Favorites";
 import Drawer from "./components/Drawer";
 import Header from "./components/Header";
 import AppContext from "./context";
-import { useState, useEffect } from "react";
 
 function App() {
   const [items, setItems] = useState([]);
